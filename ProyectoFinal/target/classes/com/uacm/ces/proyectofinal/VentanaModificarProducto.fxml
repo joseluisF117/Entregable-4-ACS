@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="495.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uacm.ces.proyectofinal.VentanaModificarProductoController">
+   <children>
+      <Text layoutX="14.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modificar Productos">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnRegresar" layoutX="23.0" layoutY="441.0" mnemonicParsing="false" onAction="#switchToVentaAlmacenista" prefHeight="39.0" prefWidth="111.0" text="Regresar" />
+      <TextArea fx:id="txtAreaDescripcion" layoutX="22.0" layoutY="264.0" prefHeight="65.0" prefWidth="241.0" />
+      <ComboBox fx:id="comboBoxCategoria" layoutX="381.0" layoutY="234.0" prefHeight="25.0" prefWidth="196.0" />
+      <DatePicker fx:id="datePickerFechaCaducidad" layoutX="381.0" layoutY="157.0" prefHeight="25.0" prefWidth="196.0" />
+      <Text layoutX="22.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" wrappingWidth="149.33333333333348">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="23.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descripcion" wrappingWidth="163.33325958251953">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="381.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categoria" wrappingWidth="163.33325958251953">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="381.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero de piezas" wrappingWidth="183.33328247070312">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="381.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha Caducidad" wrappingWidth="183.33328247070312">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="23.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buscar producto por ID" wrappingWidth="234.00006612141942">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnBuscarProducto" layoutX="385.0" layoutY="64.0" mnemonicParsing="false" onAction="#buscarProducto" prefHeight="39.0" prefWidth="196.0" text="Buscar">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnModificarProducto" layoutX="385.0" layoutY="396.0" mnemonicParsing="false" onAction="#modificarProducto" prefHeight="56.0" prefWidth="196.0" text="Modificar">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <TextField fx:id="textFieldBuscarId" layoutX="29.0" layoutY="108.0" prefHeight="25.0" prefWidth="241.0" />
+      <TextField fx:id="txtFieldNombre" layoutX="22.0" layoutY="187.0" prefHeight="25.0" prefWidth="241.0" />
+      <TextField fx:id="txtFieldNumeroPiezas" layoutX="381.0" layoutY="316.0" prefHeight="25.0" prefWidth="196.0" />
+      <CheckBox fx:id="checkBoxExistenciaInventario" layoutX="19.0" layoutY="370.0" mnemonicParsing="false" text="Existencia en inventario" />
+   </children>
+</AnchorPane>

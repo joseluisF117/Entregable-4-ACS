@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="617.0" maxWidth="357.0" minHeight="617.0" minWidth="357.0" prefHeight="617.0" prefWidth="357.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.uacm.ces.proyectofinal.VentanaTicketController">
+   <children>
+      <Text fx:id="txtNombreFiscal" layoutX="43.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre Fiscal" wrappingWidth="190.13672637939453" />
+      <Text fx:id="txtRegimenFiscal" layoutX="43.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Regimen fiscal" wrappingWidth="112.53675079345703" />
+      <Text fx:id="txtDomicilioFiscal" layoutX="43.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Domicilio fiscal" />
+      <Text fx:id="txtRFC" layoutX="43.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RFC" wrappingWidth="79.576171875" />
+      <Text fx:id="txtLugarExpedicionTicket" layoutX="43.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lugar de expedicion" />
+      <Text fx:id="txtTipoCliente" layoutX="43.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo cliente" wrappingWidth="107.056640625" />
+      <AnchorPane layoutX="38.0" layoutY="276.0" prefHeight="63.0" prefWidth="302.0">
+         <children>
+            <Text fx:id="txtNombreVendedor" layoutX="14.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre vendedor" wrappingWidth="135.73670196533203" />
+            <Text fx:id="txtVendedorCajero" layoutX="14.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre vendedor cajero" wrappingWidth="135.73670196533203" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableViewProducto" layoutX="43.0" layoutY="339.0" prefHeight="200.0" prefWidth="302.0">
+         <columns>
+            <TableColumn fx:id="tableViewColumnCantidad" prefWidth="75.0" styleClass="estiloTabla.css" text="Cantidad" />
+            <TableColumn fx:id="tableViewColumnNombreProducto" prefWidth="75.0" text="Nombre" />
+            <TableColumn fx:id="tableViewColumnPrecio" prefWidth="75.0" text="Precio" />
+            <TableColumn fx:id="tableViewColumnImporte" prefWidth="75.0" text="Importe" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
